@@ -1,0 +1,47 @@
+body {
+  margn: 0;
+  padding: 0;
+}
+
+.star-wrapper {
+  position: relative;
+}
+
+.stars {
+  background-image: url("https://assets.codepen.io/13090/stars_1.png");
+  background-repeat: none;
+  width: 355px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.one-star:hover ~ .stars {
+  background-position: 0 -81px;
+}
+
+.two-stars:hover ~ .stars {
+  background-position: 0 -162px;
+}
+
+.three-stars:hover ~ .stars {
+  background-position: 0 -243px;
+}
+
+.four-stars:hover ~ .stars {
+  background-position: 0 -324px;
+}
+
+.five-stars:hover ~ .stars {
+  background-position: 0 -405px;
+}
